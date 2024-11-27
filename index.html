@@ -2,7 +2,7 @@
  * @Author: Nattapong Kamma Icezazarun@gmail.com
  * @Date: 2024-11-27 17:55:27
  * @LastEditors: Nattapong Kamma Icezazarun@gmail.com
- * @LastEditTime: 2024-11-27 18:11:10
+ * @LastEditTime: 2024-11-27 23:07:12
  * @FilePath: \88823665-camp-66\index.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -15,9 +15,72 @@
     <meta charset="UTF-8" />
 </head>
 <body>
-    <h1 style="background-color: red">Hellos word</h1>
-    <p>This is a paragraph.</p>
-    <tagname>Content goes here...สวัสดี</tagname>
-    <ไทย>ทดสอบภาษาไทย</ไทย>
+    <h1>Workshop #HTML-FORM</h1>
+    <table>
+    <form>
+        <tr>
+            <td><label for="Fname">ชื่อ</label></td>
+            <td><input type="text" id="Fname" name="Fname"></td>
+        </tr>
+        <tr>
+            <td><label for="Lname">สกุล</label></td>
+            <td><input type="text" id="Lname" name="Lname"></td>
+        </tr>
+        <tr>
+            <td><label for="day">วัน/เดือน/ปี</label></td>
+            <td><input type="date" id="day"name="day"></td>
+        </tr>
+        <tr>
+            <td><label for="Age">อายุ</label></td>
+            <td><input type="text" name="Age" id="Age"></td>
+        </tr>
+        <tr>
+            <td><label for="gender">เพศ</label></td>
+            <td>
+                <input type="radio" id="male" name="gender">
+                <label for="male">ชาย</label>
+                <input type="radio" id="female" name="gender">
+                <label for="female">หญิง</label>
+            </td>    
+        </tr>
+        <tr>
+            <td><label for="image">รูป</label></td>
+            <td><input type="file"></td>
+        </tr>
+        <tr>
+            <td><label for="address">ที่อยู่</label></td>    
+            <td><textarea rows="4" cols="21"></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="favoriteColor">สีที่ชอบ</label></td>
+            <td>
+                <select id="favoriteColor" name="favoriteColor">
+                <option value="red">สีแดง</option>
+                <option value="blue">สีน้ำเงิน</option>
+                <option value="green">สีเขียว</option>
+                <option value="yellow">สีเหลือง</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="music">แนวเพลงที่ชอบ</label></td>
+            <td>
+                <input type="radio" id="forLife" name="music">
+                <label for="forLife">เพื่อชีวิต</label>
+                <input type="radio" id="country" name="music">
+                <label for="country">ลูกทุ่ง</label>
+                <input type="radio" id="other" name="music">
+                <label for="other">อื่นๆ</label>
+            </td>    
+        </tr>
+        <tr>
+            <td><br><input type="checkbox">ยินยอมให้เก็บข้อมูล</td>
+        </tr>
+        <tr>
+            <td><br><input type="reset"></td>
+            <td><br><input type="submit"></td>
+        </tr>
+    </form>
+    </table>
 </body>
 </html>
