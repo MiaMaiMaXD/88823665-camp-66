@@ -1,0 +1,58 @@
+/* mystyle.css */
+ul{
+    list-style-type: disc;
+    list-style: circle inside url('https://media.tenor.com/3UrXAIgrUDoAAAAi/rappa-seseren.gif');
+}
+h1 {
+    /*test*/
+    color: violet ;
+}
+h1, .myh1 {
+    font-size: 25pt;
+    margin: 25px auto;
+    padding: 10px 20px; /*ไม่กว้างเกิน*/
+    border: 3px solid pink;
+    border-radius: 15px;
+    background-color: #fff5f8;
+    text-align: center;
+    display: inline-block; /*ขนาดกรอบพอดีข้อความ*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+h1:hover, .myh1:hover {
+    transform: scale(1.02); /*ขยายเมื่อชี้เมาส์*/
+    background-color: #ffe0e8; 
+}
+body{
+    font-family: 'Kanit' , serif ; 
+    background-color: pink;
+}
+input[type="submit"]:hover{
+    background-color: rgb(56, 255, 56);
+}
+input[type="reset"]:hover {
+    background-color: rgb(255, 56, 56);
+}
+label[for="forLife"]:hover,
+label[for="country"]:hover,
+label[for="other"]:hover{
+    color: red;
+    transition: color 0.3s ease; 
+}
+label[for="male"]:hover {
+    color: blue;
+    transition: color 0.3s ease;
+}
+label[for="female"]:hover {
+    color: deeppink;
+    transition: color 0.3s ease;
+}
+/*มื่อ input ถูก focus*/
+input#Fname:focus, 
+input#Lname:focus, 
+input#Age:focus, 
+textarea#address:focus {
+    border-color: #00bfff;
+    box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
+    outline: none;
+}
