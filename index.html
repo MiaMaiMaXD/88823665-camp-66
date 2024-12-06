@@ -2,7 +2,7 @@
  * @Author: Nattapong Kamma Icezazarun@gmail.com
  * @Date: 2024-11-27 17:55:27
  * @LastEditors: Nattapong Kamma Icezazarun@gmail.com
- * @LastEditTime: 2024-12-05 14:53:07
+ * @LastEditTime: 2024-12-06 20:25:03
  * @FilePath: \88823665-camp-66\index.html
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -24,12 +24,18 @@
 </head>
 <body>
     <style>
-        /* internal css */
         h1 {
-            color:blue; 
+            color: white;
+            -webkit-text-stroke: 2px rgb(222, 78, 254); /*ขอบสีชมพู*/
+            font-size: 50px; 
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /*เงา*/
+            margin-top: 20px; /*ห่างจากด้านบน*/
         }
     </style>
-    <h1 class="h1.mystyle" >Workshop #HTML-FORM</h1>
+    
+
+    <h1 class="h1.mystyle">Workshop #HTML-FORM</h1>
 
     <form>
     <table>
@@ -47,7 +53,7 @@
         </tr>
         <tr>
             <td><label for="Age">อายุ</label></td>
-            <td><input type="number" name="Age" id="Age" min="1" max="120" style="width: 65%;" ></td>
+            <td><input type="number" name="Age" id="Age" min="1" max="120" style="width: 121.5pt;" ></td>
         </tr>
         <tr>
             <td><label for="gender">เพศ</label></td>
@@ -64,7 +70,7 @@
         </tr>
         <tr>
             <td><label for="address">ที่อยู่</label></td>    
-            <td><textarea rows="4" cols="21"></textarea></td>
+            <td><textarea rows="4" cols="22.9"></textarea></td>
         </tr>
         <tr>
             <td><label for="favoriteColor">สีที่ชอบ</label></td>
@@ -95,7 +101,9 @@
             <td><br><input type="reset"></td>
             <td><br><input type="submit"></td>
         </tr>
+
     </table>   
  </form>
+
 </body>
 </html>

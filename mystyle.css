@@ -10,25 +10,51 @@ h1 {
 h1, .myh1 {
     font-size: 25pt;
     margin: 25px auto;
-    padding: 10px 20px; /*ไม่กว้างเกิน*/
+    padding: 20px 50px;
     border: 3px solid pink;
     border-radius: 15px;
-    background-color: #fff5f8;
     text-align: center;
-    display: inline-block; /*ขนาดกรอบพอดีข้อความ*/
+    background-image: url('https://media1.tenor.com/m/YnoLy2wpiCkAAAAC/rappa-honkai-star-rail.gif');
+    background-size: cover;
+    background-position: center; /* จัดตำแหน่งให้อยู่ตรงกลาง */
+    background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+    display: flex; 
+    justify-content: center; /* จัดข้อความให้อยู่กึ่งกลางแนวนอน */
+    align-items: center; /* จัดข้อความให้อยู่กึ่งกลางแนวตั้ง */
+    width: 50%; height: 100;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
+
 h1:hover, .myh1:hover {
     transform: scale(1.02); /*ขยายเมื่อชี้เมาส์*/
     background-color: #ffe0e8; 
 }
-body{
-    font-family: 'Kanit' , serif ; 
+body {
+    font-family: 'Kanit', serif;
     background-color: pink;
+    justify-content: center;
+    align-items: center; 
+    height: 90vh; /* ให้ body มีความสูงเต็มหน้าจอ */
+    margin: 0; /* ลบ margin เริ่มต้นของ body */
+}
+form {
+    background-image: url('https://i.pinimg.com/736x/4f/d7/ce/4fd7ce13e677485ec2849de64473c258.jpg'); 
+    background-color: #fff; /* เพิ่มพื้นหลังเพื่อแยกฟอร์มออกจากพื้นหลัง */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 460px; /*ความกว้างสูงสุดของฟอร์ม*/
+    box-sizing: border-box; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+    border: 3px solid rgb(227, 21, 227); 
+    border-radius: 15px; 
+    margin: auto; 
 }
 input[type="submit"]:hover{
-    background-color: rgb(56, 255, 56);
+    background-color: #4CAF50;
 }
 input[type="reset"]:hover {
     background-color: rgb(255, 56, 56);
@@ -47,7 +73,7 @@ label[for="female"]:hover {
     color: deeppink;
     transition: color 0.3s ease;
 }
-/*มื่อ input ถูก focus*/
+/*เมื่อ input ถูก focus*/
 input#Fname:focus, 
 input#Lname:focus, 
 input#Age:focus, 
@@ -56,3 +82,4 @@ textarea#address:focus {
     box-shadow: 0 0 5px rgba(0, 191, 255, 0.5);
     outline: none;
 }
+
