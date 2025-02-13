@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Models\User;
 
 class UserController extends Controller
@@ -14,7 +13,9 @@ class UserController extends Controller
         $data['users'] = $users;
         return view('user.index', ['users' => $users]);
     }
+    function login(Request $req){
 
+    }
     function edit($id){
         $user = User::find($id);
         $data['user'] = $user;
